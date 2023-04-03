@@ -1,4 +1,4 @@
-import Navbar from "@/Navbar";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { useMemo } from "react";
 import { DoorExit, H1, Run } from "tabler-icons-react";
