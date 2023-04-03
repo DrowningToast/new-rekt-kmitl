@@ -1,5 +1,5 @@
-import Navbar from "@/Navbar";
-import { quotes } from "@/quotes";
+import Navbar from "@/components/Navbar";
+import { quotes } from "@/components/quotes";
 import { NextPage } from "next";
 import { useMemo, useState } from "react";
 
