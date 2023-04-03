@@ -15,7 +15,7 @@ const Index = () => {
   const time = useMemo(() => {
     let diff = deadline.getTime() - now.getTime();
 
-    let days = Math.floor(diff / (1000 * 3600 * 24));
+    let days = Math.min(Math.floor(diff / (1000 * 3600 * 24) - 1), 0);
     let hours = Math.floor((diff % (1000 * 3600 * 24)) / (1000 * 3600));
     return {
       days,
