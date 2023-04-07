@@ -5,10 +5,7 @@ import { DoorExit, H1, Run } from "tabler-icons-react";
 
 const Index = () => {
   const deadline = useMemo(
-    () =>
-      new Date(
-        `${process.env.NEXT_PUBLIC_date} ${process.env.NEXT_PUBLIC_time}`
-      ),
+    () => new Date(`${process.env.NEXT_PUBLIC_date} ${process.env.NEXT_PUBLIC_time}`),
     []
   );
   const now = new Date();
@@ -27,24 +24,18 @@ const Index = () => {
     <main>
       <Navbar />
       <div className="flex flex-col px-4 md:px-8 lg:px-12 py-10 gap-y-4 md:gap-y-2 md:grid grid-cols-2 md:my-8 lg:my-12">
-        <div className="flex items-center">
+        <div className="flex items-center mt-12">
           <h2 className="text-4xl leading-10 font-medium">เหลือเวลาเวลาอีก</h2>
         </div>
         {time.hours > 0 ? (
           <h1 className="row-start-2 text-6xl lg:text-8xl font-bold my-2">
-            <div>{time.days} วัน</div>{" "}
-            <div className="mt-3">{time.hours} ชั่วโมง</div>
+            <div>{time.days} วัน</div> <div className="mt-3">{time.hours} ชั่วโมง</div>
           </h1>
         ) : (
-          <h1 className="row-start-2 text-6xl lg:text-8xl font-bold">
-            {" "}
-            ถอนไม่ได้ละจ้า
-          </h1>
+          <h1 className="row-start-2 text-6xl lg:text-8xl font-bold"> ถอนไม่ได้ละจ้า</h1>
         )}
         <div className="flex items-center row-start-3 ">
-          <h3 className="text-3xl lg:text-4xl font-medium">
-            ในการถอนวิชาเรียน
-          </h3>
+          <h3 className="text-3xl lg:text-4xl font-medium">ในการถอนวิชาเรียน</h3>
         </div>
         <div className="flex flex-col gap-y-4 pt-4 col-start-1 md:mr-20 lg:mr-48">
           <Link
@@ -99,10 +90,7 @@ const Index = () => {
       </div>
       <div className="w-full flex flex-col gap-y-4 items-center px-8 mt-16 ">
         <h3>ไม่มั่นใจกับคะแนนที่ได้ว่าจะทอนดีหรือไม่?</h3>
-        <Link
-          href="/survey"
-          className=" inline-block w-full lg:grid place-items-center"
-        >
+        <Link href="/survey" className=" inline-block w-full lg:grid place-items-center">
           <button className="w-full bg-primary max-w-5xl text-white rounded-md text-xl lg:text-4xl font-medium py-1.5">
             ทำแบบทดสอบ
           </button>

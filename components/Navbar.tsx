@@ -12,9 +12,6 @@ const Navbar = () => {
           </Link>
         </div>
       </nav>
-      <nav className="bg-primary text-white py-4 px-4 text-xl font-medium inset-x-0">
-        New Rekt KMITL
-      </nav>
     </>
   );
 };
