@@ -96,9 +96,25 @@ const Index = () => {
           </button>
         </Link>
       </div>
-      <span className="mt-16 inline-block text-center w-full">
-        This website takes inspiration from CU GET REKT
-      </span>
+      <div className="mt-12 inline-block text-center w-full py-8 bg-primary font-bold text-white text-xs lg:text-base ">
+        <span>Made with ❤️ in School of Information technology, KMITL</span>
+        <span>
+          {" by "}
+          <a className="underline" href="https://github.com/DrowningToast">
+            @DrowningToast
+          </a>
+          {" and "}
+          <a className="mr-2 underline" href="https://github.com/misterfocusth">
+            @misterfocusth
+          </a>
+        </span>
+        <span className="mt-4 inline-block text-center w-full">
+          This website takes inspiration from{" "}
+          <a className="underline" href="https://cugetrekt.vercel.app/">
+            CU GET REKT
+          </a>
+        </span>
+      </div>
     </main>
   );
 };
