@@ -67,29 +67,29 @@ const Index = () => {
           รู้หรือไม่
         </h1>
         <div className="flex flex-col lg:gap-y-2">
-          <h2 className="text-4xl lg:text-5xl font-bold">99%</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold">99 %</h2>
           <p className="text-lg ">
             ของคนที่ติด F นั้นเกิดจากเพราะลืมถอนรายวิชา
             ฉะนั้นจึงอย่ามัวรอคะแนนที่ยังไม่ได้ออกแล้วถอนเลย!
           </p>
         </div>
         <div className="flex flex-col  lg:gap-y-2">
-          <h2 className="text-4xl lg:text-5xl font-bold">50+</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold">{">= 50"}</h2>
           <p className="text-lg ">
             คือเกณฑ์คะแนนการตัดเกรด D เป็นต้นไป ถึงแม้ว่าจะผ่านด้วยเกรด 1
             แต่ก็อาจจะเป็นการดึงเกรดลงทำให้ติดโปรได้
           </p>
         </div>
         <div className="flex flex-col  lg:gap-y-2">
-          <h2 className="text-4xl lg:text-5xl font-bold">45 วิ</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold">45 วินาที</h2>
           <p className="text-lg ">
-            คือระยะเวลาเฉลี่ยที่ใช้ในการเข้าสู่ระบบสถาบัน New Reg และถอน
-            เพราะฉะนั้นอย่ามัวรอและไปถอนกัน!
+            คือระยะเวลาเฉลี่ยที่ใช้ในการเข้าสู่ระบบลงทะเบียน เพิ่ม/เปลี่ยน/ถอน ของสถาบัน
+            (new.reg.kmitl.ac.th) และถอนรายวิชา เพราะฉะนั้นอย่ามัวรอและไปถอนกัน !
           </p>
         </div>
       </div>
       <div className="w-full flex flex-col gap-y-4 items-center px-8 mt-16 ">
-        <h3>ไม่มั่นใจกับคะแนนที่ได้ว่าจะทอนดีหรือไม่?</h3>
+        <h3>ไม่มั่นใจกับคะแนนที่ได้ว่าจะถอนดีหรือไม่?</h3>
         <Link href="/survey" className=" inline-block w-full lg:grid place-items-center">
           <button className="w-full bg-primary max-w-5xl text-white rounded-md text-xl lg:text-4xl font-medium py-1.5">
             ทำแบบทดสอบ

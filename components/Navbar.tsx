@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-primary text-white py-4 px-4 font-medium fixed inset-x-0 flex">
+      <nav className="bg-primary text-white py-4 px-4 font-medium fixed inset-x-0 flex top-0">
         <h1 className="text-lg md:text-xl lg:text-2xl">New Rekt KMITL</h1>
         <div className="gap-x-2 lg:gap-x-8 flex ml-auto text-sm md:text-lg lg:text-xl items-center">
           <Link href="/">หน้าหลัก</Link>
