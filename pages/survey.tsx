@@ -1,15 +1,15 @@
-import Navbar from "@/components/Navbar";
-import { quotes } from "@/components/quotes";
-import { NextPage } from "next";
-import { useMemo, useState } from "react";
+import Navbar from "@/components/Navbar"
+import { quotes } from "@/components/quotes"
+import { NextPage } from "next"
+import { useMemo, useState } from "react"
 
 const SurveyPage: NextPage = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false)
 
   const randomNumber = useMemo(
     () => Math.floor(Math.random() * quotes.length),
-    [quotes]
-  );
+    [],
+  )
 
   return (
     <p>
@@ -50,7 +50,7 @@ const SurveyPage: NextPage = () => {
         )}
       </main>
     </p>
-  );
-};
+  )
+}
 
-export default SurveyPage;
+export default SurveyPage

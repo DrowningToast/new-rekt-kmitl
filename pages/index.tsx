@@ -1,27 +1,27 @@
-import Navbar from "@/components/Navbar";
-import Link from "next/link";
-import { useMemo } from "react";
-import { DoorExit, H1, Run } from "tabler-icons-react";
+import Navbar from "@/components/Navbar"
+import Link from "next/link"
+import { useMemo } from "react"
+import { DoorExit, H1, Run } from "tabler-icons-react"
 
 const Index = () => {
   const deadline = useMemo(
     () =>
       new Date(
-        `${process.env.NEXT_PUBLIC_date} ${process.env.NEXT_PUBLIC_time}`
+        `${process.env.NEXT_PUBLIC_date} ${process.env.NEXT_PUBLIC_time}`,
       ),
-    []
-  );
-  const now = new Date();
+    [],
+  )
+  const now = useMemo(() => new Date(), [])
   const time = useMemo(() => {
-    let diff = deadline.getTime() - now.getTime();
+    let diff = deadline.getTime() - now.getTime()
 
-    let days = Math.max(Math.floor(diff / (1000 * 3600 * 24) - 1), 0);
-    let hours = Math.floor((diff % (1000 * 3600 * 24)) / (1000 * 3600));
+    let days = Math.max(Math.floor(diff / (1000 * 3600 * 24) - 1), 0)
+    let hours = Math.floor((diff % (1000 * 3600 * 24)) / (1000 * 3600))
     return {
       days,
       hours,
-    };
-  }, [deadline]);
+    }
+  }, [deadline, now])
 
   return (
     <main>
@@ -112,7 +112,7 @@ const Index = () => {
         This website takes inspiration from CU GET REKT
       </span>
     </main>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
