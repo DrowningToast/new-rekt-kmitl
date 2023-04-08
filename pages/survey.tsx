@@ -5,16 +5,12 @@ import { useMemo, useState } from "react"
 
 const SurveyPage: NextPage = () => {
   const [show, setShow] = useState(false)
-
-  const randomNumber = useMemo(
-    () => Math.floor(Math.random() * quotes.length),
-    [],
-  )
+  const randomNumber = useMemo(() => Math.floor(Math.random() * quotes.length), [quotes]);
 
   return (
-    <p>
+    <>
       <Navbar />
-      <main className="flex flex-col px-6 py-4 lg:grid grid-cols-2 gap-y-6 lg:gap-x-12">
+      <main className="flex flex-col px-6 py-4 lg:grid grid-cols-2 gap-y-6 lg:gap-x-12 mt-20">
         <h1 className="text-lg md:text-xl bg-primary text-white px-2 py-2 lg:max-w-2xl">
           กรอกคะแนน Midterm ที่ท่านได้ (เต็ม 50)
         </h1>
@@ -49,8 +45,9 @@ const SurveyPage: NextPage = () => {
           </h1>
         )}
       </main>
-    </p>
-  )
-}
+    </>
+  );
+};
+
 
 export default SurveyPage
