@@ -1,7 +1,7 @@
-import Navbar from "@/components/Navbar";
-import Link from "next/link";
-import { useMemo } from "react";
-import { DoorExit, H1, Run } from "tabler-icons-react";
+import Navbar from "@/components/Navbar"
+import Link from "next/link"
+import { useMemo } from "react"
+import { DoorExit, H1, Run } from "tabler-icons-react"
 
 const Index = () => {
   const deadline = useMemo(
@@ -9,16 +9,17 @@ const Index = () => {
     []
   );
   const now = new Date();
-  const time = useMemo(() => {
-    let diff = deadline.getTime() - now.getTime();
 
-    let days = Math.max(Math.floor(diff / (1000 * 3600 * 24) - 1), 0);
-    let hours = Math.floor((diff % (1000 * 3600 * 24)) / (1000 * 3600));
+  const time = useMemo(() => {
+    let diff = deadline.getTime() - now.getTime()
+
+    let days = Math.max(Math.floor(diff / (1000 * 3600 * 24) - 1), 0)
+    let hours = Math.floor((diff % (1000 * 3600 * 24)) / (1000 * 3600))
     return {
       days,
       hours,
-    };
-  }, [deadline]);
+    }
+  }, [deadline, now])
 
   return (
     <main>
@@ -116,7 +117,7 @@ const Index = () => {
         </span>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
