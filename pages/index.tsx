@@ -104,9 +104,13 @@ const Index = () => {
           <a className="underline" href="https://github.com/DrowningToast">
             @DrowningToast
           </a>
-          {" and "}
-          <a className="mr-2 underline" href="https://github.com/misterfocusth">
+          {" & "}
+          <a className="underline" href="https://github.com/misterfocusth">
             @misterfocusth
+          </a>
+          {" & "}
+          <a className="underline" href="https://github.com/FewPz">
+            @FewPz
           </a>
         </span>
         <span className="mt-4 inline-block text-center w-full">
